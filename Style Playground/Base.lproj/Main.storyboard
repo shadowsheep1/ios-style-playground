@@ -39,23 +39,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="keyboardToolbar" destination="Evr-vI-4af" id="quJ-4m-ZgQ"/>
                         <outlet property="myTextField" destination="27n-q4-bF1" id="BgA-Pr-TxM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Evr-vI-4af">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <items>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="aEo-i3-p0F"/>
-                        <barButtonItem systemItem="done" id="ImR-Cs-Xkc">
-                            <connections>
-                                <action selector="toolbarDoneClick:" destination="BYZ-38-t0r" id="HjK-wI-tea"/>
-                            </connections>
-                        </barButtonItem>
-                    </items>
-                </toolbar>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="120.53571428571428"/>
         </scene>
