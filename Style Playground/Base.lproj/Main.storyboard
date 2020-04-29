@@ -30,7 +30,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hello" id="eZ9-G7-VYP"/>
+                    <navigationItem key="navigationItem" title="Hello" id="eZ9-G7-VYP">
+                        <barButtonItem key="rightBarButtonItem" title="Toggle Theme" id="i1o-Hk-mYK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="toggleTheme:" destination="BYZ-38-t0r" id="7bF-sa-xEY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="keyboardToolbar" destination="Evr-vI-4af" id="quJ-4m-ZgQ"/>
                         <outlet property="myTextField" destination="27n-q4-bF1" id="BgA-Pr-TxM"/>

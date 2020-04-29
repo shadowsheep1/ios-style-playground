@@ -128,31 +128,31 @@ extension Notification.Name {
     }
     
     @objc class func colorLightAzure(theme: String) -> UIColor {
-           return colors(themeDefault: "C5E1EF",
-                         themeVariant1: "74dba2",
+           return colors(defaultColor: "C5E1EF",
+                         variantColor: "f7d77e",
                          forTheme: theme)
        }
     
     @objc class func colorAzure(theme: String) -> UIColor {
-        return colors(themeDefault: "009EE0",
-                      themeVariant1: "029e48",
+        return colors(defaultColor: "009EE0",
+                      variantColor: "f5b402",
                       forTheme: theme)
     }
     
     @objc class func colorBlue(theme: String) -> UIColor {
-        return colors(themeDefault: "0A306B",
-                      themeVariant1: "0A306B",
+        return colors(defaultColor: "0A306B",
+                      variantColor: "a37802",
                       forTheme: theme)
     }
     
-    fileprivate class func colors(themeDefault: String,
-                                  themeVariant1: String,
+    fileprivate class func colors(defaultColor: String,
+                                  variantColor: String,
                                   forTheme theme: String = themeDefault) -> UIColor {
-        var color = UIColor(hex: themeDefault)
+        var color = UIColor(hex: defaultColor)
         
         switch theme {
         case themeVariant1:
-            color = UIColor(hex: themeVariant1)
+            color = UIColor(hex: variantColor)
         default:
             print("colors: default")
         }
