@@ -129,13 +129,13 @@ extension Notification.Name {
     
     @objc class func colorLightAzure(theme: String) -> UIColor {
            return colors(themeDefault: "C5E1EF",
-                         themeVariant1: "cdcdcd",
+                         themeVariant1: "74dba2",
                          forTheme: theme)
        }
     
     @objc class func colorAzure(theme: String) -> UIColor {
         return colors(themeDefault: "009EE0",
-                      themeVariant1: "c2011b",
+                      themeVariant1: "029e48",
                       forTheme: theme)
     }
     

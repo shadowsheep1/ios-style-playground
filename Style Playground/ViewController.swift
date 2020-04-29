@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var keyboardToolbar: UIToolbar!
+    @IBOutlet weak var myTextField: UITextField!
+    
+    @IBAction func toolbarDoneClick(_ sender: Any) {
+        self.myTextField.resignFirstResponder()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.myTextField.inputAccessoryView = self.keyboardToolbar
     }
 
 
