@@ -60,9 +60,9 @@ extension Notification.Name {
         let appDelegate = UIApplication.shared.delegate
         
         appDelegate?.window??.subviews.forEach({ (view: UIView) in
-                view.removeFromSuperview()
-                appDelegate?.window??.addSubview(view)
-            })
+            view.removeFromSuperview()
+            appDelegate?.window??.addSubview(view)
+        })
         
         viewController?.view.setNeedsLayout()
         viewController?.view.setNeedsDisplay()
@@ -128,10 +128,10 @@ extension Notification.Name {
     }
     
     @objc class func colorLightAzure(theme: String) -> UIColor {
-           return colors(defaultColor: "C5E1EF",
-                         variantColor: "f7d77e",
-                         forTheme: theme)
-       }
+        return colors(defaultColor: "C5E1EF",
+                      variantColor: "f7d77e",
+                      forTheme: theme)
+    }
     
     @objc class func colorAzure(theme: String) -> UIColor {
         return colors(defaultColor: "009EE0",
