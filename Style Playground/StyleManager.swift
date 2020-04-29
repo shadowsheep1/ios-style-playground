@@ -57,12 +57,12 @@ extension Notification.Name {
     }
     
     @objc class func rebuildTheme(viewController: UIViewController? = nil) {
-        UIApplication.shared.windows.forEach({ (window: UIWindow) in
-            window.subviews.forEach({ (view: UIView) in
+        let appDelegate = UIApplication.shared.delegate
+        
+        appDelegate?.window??.subviews.forEach({ (view: UIView) in
                 view.removeFromSuperview()
-                window.addSubview(view)
+                appDelegate?.window??.addSubview(view)
             })
-        });
         
         viewController?.view.setNeedsLayout()
         viewController?.view.setNeedsDisplay()
